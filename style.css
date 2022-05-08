@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --violet: hsl(257, 40%, 49%);
+  --soft_magenta: hsl(300, 69%, 71%);
+}
+
+body {
+  max-width: 1440px;
+  height: 800px;
+  background-color: var(--violet);
+  background-image: url("images/bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -5px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 2.95rem;
+  color: #ffffff;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #ffffff;
+}
+
+button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
+  color: var(--violet);
+  cursor: pointer;
+  width: 35%;
+  height: 60px;
+  border-radius: 35px;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button:hover {
+  color: #ffffff;
+  background-color: var(--soft_magenta);
+}
+
+.logo {
+  padding: 2rem;
+}
+
+.container {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.container > * {
+  flex-basis: 100%;
+}
+
+
+.social {
+  font-size: 1.8rem;
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  padding: 2rem;
+  padding-right: 4rem;
+  justify-content: flex-end;
+  gap: 3rem;
+}
+
+.fa-brands:hover {
+  color: var(--soft_magenta);
+}
+
+
+
+/* ========= responsive ========= */
+@media screen and (max-width: 800px) {
+  body {
+    max-width: 750px;
+    height: 1600px;
+    background-color: var(--violet);
+    background-image: url("images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-position: -5px;*/
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .logo {
+    padding-top: 5rem;
+  }
+
+  .mockup {
+    padding-top: 3rem;
+  }
+
+  .text {
+    padding-top: 3rem;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  p {
+    font-size: 2.24rem; 
+  }
+
+  .social {
+    justify-content: center;
+  }
+
+  button {
+    margin: 2rem;
+  }
+
+}
+
+/*====================
+FOOTER
+====================*/
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+  color: #ffffff;
+}
+
+.attribution a {
+  color: #ffffff;
+}
